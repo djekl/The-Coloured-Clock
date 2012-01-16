@@ -49,7 +49,7 @@ $(function(){
 				colorHSL = "hsl("+hslVal+', '+hslSat+'%, '+hslLig+'%)';
 		
 		//between 8pm and 8am then the color is black
-		if(getHours < 20 && getHours > 8){
+		if(getHours <= 20 && getHours >= 8){
 					whiteOrNot = '#FFF';
 				} else {
 					whiteOrNot = '#000';
