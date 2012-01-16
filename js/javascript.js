@@ -49,13 +49,11 @@ $(function(){
 				colorHSL = "hsl("+hslVal+', '+hslSat+'%, '+hslLig+'%)';
 		
 		//if it's up to 20 o'clock then the color is black
-				/*
 		if(getHours < 20){
 					whiteOrNot = '#FFF';
 				} else {
 					whiteOrNot = '#000';
 				}
-		*/
 		
 		
 		//apply the color to the background and text-color
