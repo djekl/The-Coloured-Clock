@@ -16,19 +16,19 @@ $(function(){
 				getSeconds = myDate.getSeconds();
 		
 		//add 0 before one size numbers
-		if(getHours < 10){
+		if(getHours <= 10){
 			getHours = "0"+getHours;
 		} else {
 			getHours = getHours;
 		}
 		
-		if(getMinutes < 10){
+		if(getMinutes <= 10){
 			getMinutes = "0"+getMinutes;
 		} else {
 			getMinutes = getMinutes;
 		}
 		
-		if(getSeconds < 10){
+		if(getSeconds <= 10){
 			getSeconds = "0"+getSeconds;
 		} else {
 			getSeconds = getSeconds;
@@ -49,12 +49,13 @@ $(function(){
 				colorHSL = "hsl("+hslVal+', '+hslSat+'%, '+hslLig+'%)';
 		
 		//between 8pm and 8am then the color is black
+		/*
 		if(getHours <= 20 && getHours >= 8){
 					whiteOrNot = '#FFF';
 				} else {
 					whiteOrNot = '#000';
 				}
-		
+		*/		
 		
 		//apply the color to the background and text-color
 		$('body').css({
@@ -115,7 +116,7 @@ $(function(){
 			
 			//empty to better fill
 			$('.days').empty();
-			for(var i=1; i < DayNumber[getMonth]+1; i++){
+			for(var i=1; i <= DayNumber[getMonth]+1; i++){
 				var date = new Date(getYear,getMonth,i);
 						date = date.getDay(),
 						toAppend = '';
