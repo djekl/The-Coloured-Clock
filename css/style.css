@@ -1,0 +1,119 @@
+body{
+	margin: 0;
+	padding: 0;
+	position: relative;
+	overflow: hidden;
+	
+	background: white;
+	
+	font: bold 50px Helvetica, sans-serif;
+	color:white;
+	
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-o-transition: all 1s;
+	transition: all 1s;
+	}
+
+.gradient{
+	padding-top: 10px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+	-webkit-transition: background 1s;
+	-moz-transition: background 1s;
+	-o-transition: background 1s;
+	transition: background 1s;
+	
+	background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,0.3)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,0.3) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,0.3) 0%,rgba(255,255,255,0) 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,0.3) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+	background: radial-gradient(center, ellipse cover, rgba(255,255,255,0.3) 0%,rgba(255,255,255,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4dffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	}
+
+.time, .border{
+	-webkit-transition: width 1s;
+	-moz-transition: width 1s;
+	-o-transition: width 1s;
+	transition: width 1s;
+	}
+	
+.time{
+	float: right;
+	min-width: 220px;
+	position: relative;
+	}
+
+.border{
+	display: block;
+	float: right;
+	height: 5px;
+	margin: 10px 0 0 0;
+	
+	-webkit-transition: width 1s;
+	-moz-transition: width 1s;
+	-o-transition: width 1s;
+	transition: width 1s;
+	}
+
+span.seconds{
+	-webkit-transition: opacity 1s ease-out;
+	-moz-transition: opacity 1s ease-out;
+	-o-transition: opacity 1s ease-out;
+	transition: opacity 1s ease-out;
+	opacity: 1;
+	}
+	span.seconds.hidden{
+		opacity: 0;
+		}
+
+.color{
+	position: relative;	
+	top: -50px;
+	left: 0px;
+	
+	font-size: 40%;
+	
+	opacity: 0;
+
+	-webkit-transition: all 150ms ease-out;
+	-moz-transition: all 150ms ease-out;
+	-o-transition: all 150ms ease-out;
+	transition: all 150ms ease-out;
+	}
+	.time:hover .color{
+		top:-30px;
+		
+		opacity: 1;
+		}
+		
+.date{
+	position: absolute;
+	bottom:0px;
+	left:0px;
+	}
+	.date .month{
+		margin: 10px;
+		}
+	.date .days{
+		margin: 0;
+		overflow: hidden;
+		padding:0 10px 15px;
+		}
+		.date .days li{
+			float: left;
+			list-style: none;
+			margin-right: 5px;
+			font-size: 40%;
+			}
+			.date .days li.weekend{
+				opacity: .6;
+			}
+			.date .days li.today{
+				font-size: 60%;
+				margin-top: -3px;
+			}
