@@ -48,8 +48,8 @@ $(function(){
 		var displayDate = getHours + ':' + getMinutes + '<span class="seconds">:</span>' + getSeconds,
 				colorHSL = "hsl("+hslVal+', '+hslSat+'%, '+hslLig+'%)';
 		
-		//if it's up to 20 o'clock then the color is black
-		if(getHours < 20){
+		//between 8pm and 8am then the color is black
+		if(getHours < 20 && getHours > 8){
 					whiteOrNot = '#FFF';
 				} else {
 					whiteOrNot = '#000';
