@@ -109,7 +109,7 @@ $(function(){
 		
 			//28 or 29 february and more
 			var february= new Date(getYear,1,1).getMonth() == new Date(getYear,1,29).getMonth() ? 29 : 28,
-					DayNumber = [31, february, 31, 30, 31, 30, 31, 30, 31, 30, 31, 30 ],
+					DayNumber = [31, february, 31, 30, 31, 30, 31, 30, 30, 30, 31, 30 ],
 					getMonth = myDate.getMonth(),
 					getDay = myDate.getDay(); //0 = Sunday
 					getCurrentDay = myDate.getDate();
