@@ -1,0 +1,6 @@
+{
+  "name": "The Coloured Clock",
+  "description": "A nice simple clock thats color changes with the time",
+  "repository": "https://github.com/djekl/The-Coloured-Clock",
+  "keywords": ["html", "css", "javascript", "color", "clock"]
+}
