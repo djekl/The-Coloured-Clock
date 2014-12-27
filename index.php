@@ -12,10 +12,10 @@
 	<div class="border"></div>
 		<span class="gradient">
 			<div class="time"></div>
-			<div class="date"></div>
-			<p class="month"></p>
-			<ul class="days">
-			</ul>
+			<div class="date">
+				<p class="month"></p>
+				<ul class="days"></ul>
+			</div>
 		</span>
 	</div>
 
