@@ -1,6 +1,5 @@
-
 <!DOCTYPE html>
-<html manifest="cache.manifest">
+<html>
 <head>
 	<title>The Coloured Clock</title>
 	<meta charset="utf-8">
@@ -13,7 +12,7 @@
 	<div class="border"></div>
 		<span class="gradient">
 			<div class="time"></div>
-			<div class="date">
+			<div class="date"></div>
 			<p class="month"></p>
 			<ul class="days">
 			</ul>
